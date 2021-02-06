@@ -1,16 +1,6 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: deep-green; icon-glyph: vector-square;
-
-/*!
- * Qiita.js
- *
- * Copyright (c) ©︎ 2021 Kynako
- *
- * This software is released under the MIT license.
- * See https://github.com/Kynako/QiitaWidget/blob/main/LICENSE
-*/
-
 // pretty json
 console.pjson = (value) => {
   console.log(JSON.stringify(value, null, 2))
@@ -38,6 +28,9 @@ const Cache = importModule(`${DIR}/modules/cache`)
 const getWidgetSizeInPoint = importModule(`${DIR}/modules/getWidgetSizeInPoint`)
 
 // cache
+if(!fm.fileExists(DIR+'cache/')){
+  fm.createDirectory(root+'cache/', false);
+}
 const cacheName = `${DIR}/cache/@${CONFIG.userid}`
 const expirationMinutes = 60 * 3// 3 hours
 let USER = await getUserData(
