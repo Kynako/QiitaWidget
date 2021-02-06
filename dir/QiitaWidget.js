@@ -1,19 +1,8 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: deep-green; icon-glyph: vector-square;
-
 /*!
- * Qiita.js
- *
- * Copyright (c) ©︎ 2021 Kynako
- *
- * This software is released under the MIT license.
- * See https://github.com/Kynako/QiitaWidget/blob/main/LICENSE
-*/
-
-
-/*!
- * Qiita.js
+ * QiitaWidget.js
  *
  * Copyright (c) ©︎ 2021 Kynako
  *
@@ -99,17 +88,17 @@ const APPEARANCE = isUDA ? DARKCOLOR : LIGHTCOLOR;
 console.pjson(APPEARANCE)
 
 // qiita_png
-const QIITA_PNG = (()=>{
+const QIITA_PNG = ((root)=>{
   const qiita_png = {}
   const fm = FileManager.iCloud()
-  let dirPath = fm.bookmarkedPath('qiita-png')
+  let dirPath = fm.joinPath(root, 'qiita_png/')
   let list = fm.listContents(dirPath)
   for(let fileName of list){
     let filePath = fm.joinPath(dirPath, fileName)
     qiita_png[fm.fileName(filePath, false)] = fm.readImage(filePath)
   }
   return qiita_png
-})()
+})(root)
 
 // ===================================================
 
