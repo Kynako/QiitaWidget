@@ -84,7 +84,7 @@ const list = [
     dir: 'QiitaWidget/',
     list: [  
       {  
-        dir: 'quita_png/',  
+        dir: 'qiita_png/',  
         list: [
           `${repo}/dir/qiita_png/logo.png`,
           `${repo}/dir/qiita_png/logo-background-color.png`
