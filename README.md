@@ -1,6 +1,8 @@
 # QiitaWidget
 A widget to show Qiita user data.
 
+- v1
+
 ## Overview
 ![Overview1](assets/OVERVIEW_1.png)
 
