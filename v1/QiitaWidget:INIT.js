@@ -77,25 +77,25 @@ class Ginit {
 };
 // =================================================
 
-const repo = 'Kynako/QiitaWidget/main';
+const repo = 'Kynako/QiitaWidget/main/v1';
 const list = [
-  `${repo}/dir/QiitaWidget.js`,
+  `${repo}/QiitaWidget.js`,
   {
     dir: 'QiitaWidget/',
     list: [  
       {  
         dir: 'qiita_png/',  
         list: [
-          `${repo}/dir/qiita_png/logo.png`,
-          `${repo}/dir/qiita_png/logo-background-color.png`
+          `${repo}/qiita_png/logo.png`,
+          `${repo}/qiita_png/logo-background-color.png`
         ]
       },
       {
         dir: 'modules/',
         list: [
-          `${repo}/dir/modules/cache.js`,
-          `${repo}/dir/modules/getWidgetSizeInPoint.js`,
-          `${repo}/dir/modules/Qiita.js`
+          `${repo}/modules/cache.js`,
+          `${repo}/modules/getWidgetSizeInPoint.js`,
+          `${repo}/modules/Qiita.js`
         ]
       }
     ]
