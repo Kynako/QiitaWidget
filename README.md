@@ -1,7 +1,10 @@
 # QiitaWidget
 A widget to show Qiita user data.
 
-- v1
+|version|status|
+|-----|-----|
+|v1|usable|
+|v2|In development|
 
 ## Overview
 ![Overview1](assets/OVERVIEW_1.png)
