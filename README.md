@@ -1,3 +1,4 @@
+**INPORTANT** This repository is moving to [Scriptable](https://github.com/Kynako/Scriptable)
 # QiitaWidget
 A widget to show Qiita user data.
 
